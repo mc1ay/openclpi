@@ -1,0 +1,4 @@
+INFO: Adding section [BITSTREAM (0)] using: 'binary_containe' (91248 Bytes)
+INFO: Adding section [EMBEDDED_METADATA (2)] using: 'binary_containe' (2901 Bytes)
+INFO: Adding section [DEBUG_DATA (4)] using: 'null' (0 Bytes)
+Successfully completed 'xclbincat'

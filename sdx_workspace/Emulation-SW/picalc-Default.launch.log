@@ -1,0 +1,17 @@
+Starting Program
+Set up PRNG Array
+Linux:4.15.0-34-generic:#37~16.04.1-Ubuntu SMP Tue Aug 28 10:44:06 UTC 2018:x86_64
+Distribution: Ubuntu 16.04.4 LTS
+GLIBC: 2.23
+--- 
+XILINX_OPENCL="/opt/xilinx/SDx/2018.2.xdf/"
+LD_LIBRARY_PATH="/opt/xilinx/SDx/2018.2.xdf/platforms/xilinx_u200_xdma_201820_1/sw/lib/x86_64:/opt/xilinx/xrt/lib/:/opt/xilinx/SDx/2018.2.xdf/lib/lnx64.o:/opt/xilinx/SDx/2018.2.xdf/lib/lnx64.o/Default:/opt/xilinx/SDx/2018.2.xdf/lnx64/tools/gcc/lib64"
+--- 
+Loading: '../binary_container_1.xclbin'
+WARNING: unaligned host pointer '0x7ffd9869fe10' detected, this leads to extra memcpy
+WARNING: unaligned host pointer '0x7ffd986a1298' detected, this leads to extra memcpy
+WARNING: unaligned host pointer '0x7ffd986a0210' detected, this leads to extra memcpy
+Using 1024 test points: 
+Pi: 3.140976
+Runtime: 1.624142 seconds
+Done.

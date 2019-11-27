@@ -1,0 +1,3 @@
+
+Ã
+link$d26c9818-2826-48df-abab-8b23f3c04ff4ëxocc  -t sw_emu --platform xilinx_u200_xdma_201820_1 --save-temps -l --nk add_point:1 -g --messageDb binary_container_1.mdb --xp misc:solution_name=link --temp_dir binary_container_1 --report_dir binary_container_1/reports --log_dir binary_container_1/logs --remote_ip_cache /data/workspace_pi/ip_cache -obinary_container_1.xclbin binary_container_1/add_point.xo *Z"V/data/workspace_picalc/Emulation-SW/binary_container_1/reports/link/link_guidance.html2K"G/data/workspace_picalc/Emulation-SW/binary_container_1/link_guidance.pb

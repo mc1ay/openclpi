@@ -1,0 +1,10 @@
+2019-11-27T03:13:46.672
+0,0,86,org.eclipse.cdt.ui.CONSOLE_PARTITION_TYPE,-
+1,86,480,org.eclipse.cdt.ui.CONSOLE_PARTITION_TYPE,-
+1,566,133,org.eclipse.cdt.ui.WARNING_PARTITION_TYPE,/picalc/src/clpi.cpp​141​-1​-1​passing NULL to non-pointer argument 1 of 'cl::NDRange::NDRange(cl::size_type)' [-Wconversion-null]​1​-
+1,699,179,org.eclipse.cdt.ui.CONSOLE_PARTITION_TYPE,-
+1,878,143,org.eclipse.cdt.ui.WARNING_PARTITION_TYPE,/picalc/src/clpi.cpp​158​-1​-1​format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]​1​-
+1,1021,107,org.eclipse.cdt.ui.CONSOLE_PARTITION_TYPE,-
+1,1128,86,org.eclipse.cdt.ui.WARNING_PARTITION_TYPE,/picalc/src/clpi.cpp​35​-1​-1​unused variable 'host_prng_state' [-Wunused-variable]​1​-
+1,1214,265,org.eclipse.cdt.ui.CONSOLE_PARTITION_TYPE,-
+0,1479,42,org.eclipse.cdt.ui.CONSOLE_PARTITION_TYPE,-

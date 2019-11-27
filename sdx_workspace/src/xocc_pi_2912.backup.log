@@ -1,0 +1,9 @@
+Attempting to get a license: ap_opencl
+INFO: [XOCC 17-1223] The version limit for your license is '2019.11' and will expire in 3 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: ap_opencl
+INFO: [XOCC 60-585] Compiling for hardware target
+ERROR: [XOCC 60-705] No platform was found that matches 'xilinx_u200_xdma_201830_2'. Make sure that the platform is specified correctly and that valid license is installed. The valid platforms supported by the license found are:
+
+ERROR: [XOCC 60-587] Failed to add a platform: specified platform xilinx_u200_xdma_201830_2 is not found
+ERROR: [XOCC 60-600] Kernel compile setup failed to complete
+ERROR: [XOCC 60-592] Failed to finish compilation

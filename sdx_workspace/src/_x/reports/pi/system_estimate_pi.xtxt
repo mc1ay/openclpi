@@ -1,0 +1,39 @@
+===============================================================================
+Version:    xocc v2018.2.xdf (64-bit)
+Build:      SW Build 2342198 on Tue Sep 25 18:17:42 MDT 2018
+Copyright:  Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+Created:    Wed Nov 27 03:07:06 2019
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             pi
+Target Device:           xilinx:u200:xdma:201820.1
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+add_point    clc   fpga0:OCL_REGION_0  pi              1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     pi
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name  Target Frequency  Estimated Frequency
+------------  -----------  -----------  ----------------  -------------------
+add_point_1   add_point    add_point    300.300293        322.268768
+
+Latency Information (clock cycles)
+Compute Unit  Kernel Name  Module Name  Start Interval  Best Case  Avg Case  Worst Case
+------------  -----------  -----------  --------------  ---------  --------  ----------
+add_point_1   add_point    add_point    2522            2521       2521      2521
+
+Area Information
+Compute Unit  Kernel Name  Module Name  FF    LUT   DSP  BRAM
+------------  -----------  -----------  ----  ----  ---  ----
+add_point_1   add_point    add_point    4521  4293  12   6
+-------------------------------------------------------------------------------

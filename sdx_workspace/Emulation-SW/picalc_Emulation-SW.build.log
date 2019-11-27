@@ -1,0 +1,17 @@
+03:13:46 **** Incremental Build of configuration Emulation-SW for project picalc ****
+make -j16 incremental 
+/opt/xilinx/SDx/2018.2.xdf/bin/xcpp -DSDX_PLATFORM=xilinx_u200_xdma_201820_1 -D__USE_XOPEN2K8 -I/opt/xilinx/xrt/include/ -I/opt/xilinx/Vivado/2018.2.xdf/include/ -O0 -g -Wall -c -fmessage-length=0 -std=c++14 -DSDX_PLATFORM=xilinx_u200_xdma_201820_1 -D__USE_XOPEN2K8 -I/opt/xilinx/xrt/include/ -I/opt/xilinx/Vivado/2018.2.xdf/include/ -O0 -g -Wall -c -fmessage-length=0 -o "src/clpi.o" "../src/clpi.cpp"
+../src/clpi.cpp: In function 'int main(int, char**)':
+../src/clpi.cpp:141:87: warning: passing NULL to non-pointer argument 1 of 'cl::NDRange::NDRange(cl::size_type)' [-Wconversion-null]
+         q.enqueueNDRangeKernel(krnl_add_point, NULL, global_item_size, local_item_size);
+                                                                                       ^
+../src/clpi.cpp:158:51: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+     printf("Using %lu test points: \n", testpoints);
+                                                   ^
+../src/clpi.cpp:35:18: warning: unused variable 'host_prng_state' [-Wunused-variable]
+     unsigned int host_prng_state = 0xc69cffa1;
+                  ^
+/opt/xilinx/SDx/2018.2.xdf/bin/xcpp -o "picalc.exe" src/clpi.o src/xcl.o -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/ -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/
+
+03:13:47 Build Finished (took 1s.284ms)
+

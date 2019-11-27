@@ -1,0 +1,18 @@
+Attempting to get a license: ap_opencl
+INFO: [XOCC 17-1223] The version limit for your license is '2019.11' and will expire in 3 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: ap_opencl
+INFO: [XOCC 60-585] Compiling for hardware target
+INFO: [XOCC 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u200_xdma_201820_1/xilinx_u200_xdma_201820_1.xpfm
+INFO: [XOCC 60-423]   Target device: xilinx_u200_xdma_201820_1
+INFO: [XOCC 60-242] Creating kernel: 'add_point'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: add_point Log file:/data/workspace_picalc/src/_x/pi/add_point/vivado_hls.log :
+INFO: [XOCC 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [XOCC 204-61] Pipelining loop 'XCL_WG_DIM_X'.
+INFO: [XOCC 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 337.
+INFO: [XOCC 60-594] Finished kernel compilation
+INFO: [XOCC 60-244] Generating system estimate report...
+INFO: [XOCC 60-1092] Generated system estimate report: /data/workspace_picalc/src/_x/reports/pi/system_estimate_pi.xtxt
+WARNING: [XOCC 17-1525] IP definition with the same IP name already exists in XO container. Will overwrite the existing IP definition.
+INFO: [XOCC 60-586] Created pi.xo
+INFO: [XOCC 60-791] Total elapsed time: 0h 0m 49s

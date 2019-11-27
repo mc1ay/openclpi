@@ -1,0 +1,112 @@
+SDAccel Profile Summary
+Generated on: 2019-11-27 03:13:48
+Msec since Epoch: 1574824428202
+Profiled application: picalc.exe
+Target platform: Xilinx
+Tool version: 2018.2
+Target devices: xilinx_u200_xdma_201820_1-0
+Flow mode: CPU Emulation
+
+OpenCL API Calls
+API Name,Number Of Calls,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+clFinish,2048,1335.82,0.033051,0.652258,2.25856,
+clEnqueueMigrateMemObjects,2049,99.6314,0.029231,0.0486244,0.268157,
+clEnqueueNDRangeKernel,1024,89.7137,0.04374,0.087611,0.241967,
+clCreateProgramWithBinary,1,88.1977,88.1977,88.1977,88.1977,
+clReleaseMemObject,4105,40.8089,0.004403,0.00994127,0.072023,
+clRetainMemObject,4102,34.5552,0.004846,0.008424,0.04399,
+clSetKernelArg,3,2.60986,0.013703,0.869953,2.4255,
+clReleaseKernel,1,0.244203,0.244203,0.244203,0.244203,
+clCreateBuffer,3,0.044703,0.009746,0.014901,0.02481,
+clGetPlatformIDs,2,0.04395,0.006674,0.021975,0.037276,
+clCreateKernel,1,0.026803,0.026803,0.026803,0.026803,
+clReleaseProgram,1,0.022198,0.022198,0.022198,0.022198,
+clGetDeviceInfo,2,0.014359,0.007031,0.0071795,0.007328,
+clGetDeviceIDs,2,0.014008,0.00552,0.007004,0.008488,
+clGetPlatformInfo,2,0.01361,0.006134,0.006805,0.007476,
+clRetainDevice,2,0.013026,0.00564,0.006513,0.007386,
+clCreateContext,1,0.00999,0.00999,0.00999,0.00999,
+clCreateCommandQueue,1,0.009531,0.009531,0.009531,0.009531,
+clReleaseDevice,2,0.00949,0.004254,0.004745,0.005236,
+clReleaseCommandQueue,1,0.008801,0.008801,0.008801,0.008801,
+clReleaseContext,1,0.008131,0.008131,0.008131,0.008131,
+
+
+Kernel Execution
+Kernel,Number Of Enqueues,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+add_point,1024,1058.25,0.765806,1.03345,2.13089,
+
+
+Compute Unit Utilization
+Device,Compute Unit,Kernel,Global Work Size,Local Work Size,Number Of Calls,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),Clock Frequency (MHz),
+xilinx_u200_xdma_201820_1-0,add_point_1,add_point,1024:1:1,1024:1:1,1024,966.83,0.697188,0.94417,1.85877,300,
+
+
+Data Transfer: Host and Global Memory
+Context:Number of Devices,Transfer Type,Number Of Transfers,Transfer Rate (MB/s),Average Bandwidth Utilization (%),Average Size (KB),Total Time (ms),Average Time (ms),
+
+
+Data Transfer: Kernels and Global Memory
+Device,Compute Unit/Port Name,Kernel Arguments,DDR Bank,Transfer Type,Number Of Transfers,Transfer Rate (MB/s),Average Bandwidth Utilization (%),Average Size (KB),Average Latency (ns),
+
+
+Top Data Transfer: Kernels and Global Memory
+Device,Compute Unit,Number of Transfers,Average Bytes per Transfer,Transfer Efficiency (%),Total Data Transfer (MB),Total Write (MB),Total Read (MB),Total Transfer Rate (MB/s),
+
+
+Top Kernel Execution
+Kernel Instance Address,Kernel,Context ID,Command Queue ID,Device,Start Time (ms),Duration (ms),Global Work Size,Local Work Size,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,120.962,2.13089,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,756.593,1.6334,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,124.167,1.62241,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,758.851,1.51136,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,763.158,1.49283,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,754.436,1.48671,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,760.998,1.4844,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,765.422,1.48352,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,126.677,1.48041,1024:1:1,1024:1:1,
+35897856,add_point,0,0,xilinx_u200_xdma_201820_1-0,747.583,1.47695,1024:1:1,1024:1:1,
+
+
+Top Buffer Writes
+Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer Size (KB),Writing Rate(MB/s),
+0,0,0,117.722,N/A,5.124,N/A,
+0,0,0,1039.54,N/A,1.024,N/A,
+0,0,0,577.413,N/A,1.024,N/A,
+0,0,0,1028.1,N/A,1.024,N/A,
+0,0,0,1073.27,N/A,1.024,N/A,
+0,0,0,681.231,N/A,1.024,N/A,
+0,0,0,966.225,N/A,1.024,N/A,
+0,0,0,905.186,N/A,1.024,N/A,
+0,0,0,679.283,N/A,1.024,N/A,
+0,0,0,391.475,N/A,1.024,N/A,
+
+
+Top Buffer Reads
+Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer Size (KB),Reading Rate(MB/s),
+0,0,0,1039.07,N/A,1.024,N/A,
+0,0,0,510.49,N/A,1.024,N/A,
+0,0,0,1089.74,N/A,1.024,N/A,
+0,0,0,1138.98,N/A,1.024,N/A,
+0,0,0,917.881,N/A,1.024,N/A,
+0,0,0,1008.28,N/A,1.024,N/A,
+0,0,0,1101.17,N/A,1.024,N/A,
+0,0,0,611.374,N/A,1.024,N/A,
+0,0,0,159.325,N/A,1.024,N/A,
+0,0,0,689.922,N/A,1.024,N/A,
+
+
+PRC Parameters
+Parameter,Element,Value,
+DEVICE_EXEC_TIME,xilinx_u200_xdma_201820_1-0,1764.259472,
+CU_CALLS,xilinx_u200_xdma_201820_1-0|add_point_1,1024,
+MEMORY_BIT_WIDTH,xilinx_u200_xdma_201820_1-0,512,
+MIGRATE_MEM,host,2049,
+DDR_BANKS,0,1,
+DDR_BANKS,1,0,
+DDR_BANKS,2,0,
+DDR_BANKS,3,0,
+PORT_BIT_WIDTH,add_point_1/m_axi_gmem,32,
+KERNEL_COUNT,add_point,1,
+
+

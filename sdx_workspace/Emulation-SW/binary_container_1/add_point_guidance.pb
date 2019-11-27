@@ -1,0 +1,3 @@
+
+Á
+	add_point$23641a85-b19c-4a49-a85f-6c9b9fe6e50fÕxocc  -t sw_emu --platform xilinx_u200_xdma_201820_1 --save-temps -c -k add_point -g --nk add_point:1 --messageDb binary_container_1/add_point.mdb -I../src --xp misc:solution_name=add_point --temp_dir binary_container_1 --report_dir binary_container_1/reports --log_dir binary_container_1/logs -obinary_container_1/add_point.xo ../src/pi.cl *d"`/data/workspace_picalc/Emulation-SW/binary_container_1/reports/add_point/add_point_guidance.html2P"L/data/workspace_picalc/Emulation-SW/binary_container_1/add_point_guidance.pb

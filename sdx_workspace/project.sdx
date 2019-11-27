@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="picalc" location="/data/workspace_picalc" platform="/opt/xilinx/platforms/xilinx_u200_xdma_201820_1/xilinx_u200_xdma_201820_1.xpfm" platformUID="xilinx:u200:xdma:201820.1" systemProject="picalc_system" sysConfig="config0_0" cpu="" cpuInstance="" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.sdx.opencl.config.sw_emu.848557847">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="add_point" sourceFile="src/pi.cl"/>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="add_point" sourceFile="src/pi.cl"/>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.sdx.opencl.config.hw_emu.1809305411" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="add_point" sourceFile="src/pi.cl">
+          <computeUnits name="add_point_1"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="System" id="com.xilinx.sdx.opencl.config.hw.966732739" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="add_point" sourceFile="src/pi.cl">
+          <computeUnits name="add_point_1"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>

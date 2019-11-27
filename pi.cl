@@ -3,8 +3,8 @@ __kernel void add_point(__global bool *inside, __global unsigned int *prng_state
     
     // XOR-Shift state array element
     state ^= state << 13;
-	state ^= state >> 17;
-	state ^= state << 5;
+    state ^= state >> 17;
+    state ^= state << 5;
 
     // Use state element for x coordinate, dividing by max int size
     // to get range 0-1
@@ -12,8 +12,8 @@ __kernel void add_point(__global bool *inside, __global unsigned int *prng_state
 
     // XOR-Shift state array element
     state ^= state << 13;
-	state ^= state >> 17;
-	state ^= state << 5;
+    state ^= state >> 17;
+    state ^= state << 5;
     
     // Use state element for y coordinate, dividing by max int size
     // to get range 0-1
@@ -24,6 +24,6 @@ __kernel void add_point(__global bool *inside, __global unsigned int *prng_state
 
     // See if point is inside circle, if it is, increment counter array
     if (sqrt((x*x) + (y*y)) < 1.0) {
-		inside[get_group_id(0) * *wg_size + get_local_id(0)] = true;
-	}         
+	inside[get_group_id(0) * *wg_size + get_local_id(0)] = true;
+    }         
 }

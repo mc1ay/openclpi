@@ -1,5 +1,5 @@
 __kernel void add_point(__global bool *inside, __global unsigned int *prng_state, __global unsigned int *wg_size) {
-    unsigned int state = prng_state[get_group_id(0) * *wg_size + get_local_id(0)];
+    unsigned int state = prng_state[(get_group_id(0) % *wg_size) * get_local_size(0) + get_local_id(0)];
     
     // XOR-Shift state array element
     state ^= state << 13;
@@ -20,10 +20,10 @@ __kernel void add_point(__global bool *inside, __global unsigned int *prng_state
     float y = state / (float)0xFFFFFFFF;
 
     // Write new state element back to array
-    prng_state[get_group_id(0) * *wg_size + get_local_id(0)] = state; 
+    prng_state[(get_group_id(0) % *wg_size) * get_local_size(0) + get_local_id(0)] = state; 
 
     // See if point is inside circle, if it is, increment counter array
     if (sqrt((x*x) + (y*y)) < 1.0) {
-	inside[get_group_id(0) * *wg_size + get_local_id(0)] = true;
+	inside[(get_group_id(0) % *wg_size) * get_local_size(0) + get_local_id(0)] = true;
     }         
 }
